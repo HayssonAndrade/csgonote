@@ -3,6 +3,7 @@
 :root{
     --cor0:#181D26;
     --cor1:#D99C2B;
+    --cor2:#181d2641;
 
     --fonte-padrao:arial,verdana,helvetica,sans-serif;
 }
@@ -24,37 +25,55 @@ body{
     font-family: var(--fonte-padrao);
 }
 header{
-    min-height: 150px;
-    text-align: right;
-    padding-top: 30px;
-    
+
 }
-.imgheader{
-    
+
+.navbar {
+    background-color: #181d2641;
+    display:flex;
+    padding-bottom: 0%;
+
 }
-.menu{
-    background-color:#181d2641;
+#menu{
     margin:auto;
-    font-size: 1.5em;
-    text-align: justify;
+    margin-left: 57px;
+    margin-top: 0%;
+    margin-bottom: 0%;
     padding: 10px;
-    padding-left: 40px;
+    font-size: 1.1em;
+    list-style: none;
 }
-nav > a{
+#social{
+    float: right;
+    margin:auto;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    padding: 10px;
+    font-size: 1.1em;
+    list-style: none;
+}
+
+.navbar > ul > li {
+    display: inline;
+    
+}
+.navbar > ul > li > a{
+    
     color:var(--cor1);
+    display: inline-block;
     padding: 5px;
     text-decoration: none;
     font-weight: bold;
     border-radius: 10px;
     transition-duration: 0.5s;
 }
-nav > a:hover{
+.navbar > ul > li > a:hover{
     background-color:#d99c2b79;
     color:white;
 }
 main{
     min-width: 300px;
-    max-width: 1000px;
+    max-width: 1400px;
     margin: auto;
     margin-bottom: 30px;
     padding: 20px;
@@ -65,20 +84,21 @@ main{
     display:flex;
     
 }
-section{
-   
-    
-}
+
 section > h1{
     text-align: center;
     font-size: 2em;
     padding: 20px;
+    padding-top: 50px;
+    margin: auto;
+    box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.377);
 }
 .artigo{
     padding: 50px;
 }
 .titulo{
     padding: 20px;
+    text-align: center;
 }
 .data{
     padding: 20px;
@@ -92,11 +112,10 @@ section > h1{
     line-height: 2em;
 }
 aside{
-    background-color: red;
+    background-color: #181d26a9;
     min-width: 150px;
     width: 600px;
-    margin-top: 25%;
-    margin-bottom: 55%;
+
 }
 footer.direitos{
     color: rgba(255, 255, 255, 0.459);
